@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agency</title>
+
+    <!-- Підключення шрифтів -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Підключення стилів -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page1">
+
+    <!-- Шапка сайту -->
+    <header class="header" id="page1">
+        <div class="header_top">
+          <div class="container">
+            <div class="logo">
+                <span class="letter">A</span>
+                <span class="letter">g</span>
+                <span class="letter">e</span>
+                <span class="letter">n</span>
+                <span class="letter">c</span>
+                <span class="letter">y</span>
+              </div>
+              <div class="burger" onclick="toggleMenu()">
+                ☰
+              </div>
+            <nav class="nav">
+              <ul>
+                <li class="close-menu-item"><a href="javascript:void(0)" onclick="toggleMenu()">✕ Закрити</a></li>
+                <li><a href="#page1">До дому</a></li>
+                <li><a href="#page2">Про нас</a></li>
+                <li><a href="#page3">Наш сервіс</a></li>
+                <li><a href="#page4">Служба підтримки</a></li>
+                <li><a href="#footer">Контакти</a></li>
+                <li><a href="#page5">Купити зараз</a></li> 
+              </ul>  
+            </nav>
+            <button class="header_button" onclick="openModal()">Наші контакти</button>
+          </div>
+        </div>
+      
+      <div class="text_page_1">
+        <div class="fade-in">
+        <h1 class="header_title">Агентство Креативного Дизайну</h1>
+        <h2 class="header_subtitle">Ми створюємо унікальні дизайнерські рішення для вашого бізнесу. Наша команда професіоналів допоможе зробити ваш бренд яскравим, стильним та незабутнім.</h2>
+</div>
+        <a href="#page2" class="cta-button">Читати більше</a></div>
+        <img src="./images/01.png" alt="company" class="header_img_girl">
+    </header>
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeModal()">&times;</span>
+          <h2>Зв'язатися з нами</h2>
+          <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="your@email.com" required>
+      
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" placeholder="+380..." required>
+      
+            <label for="message">Повідомлення:</label>
+            <textarea id="message" rows="4" placeholder="Ваше повідомлення..."></textarea>
+      
+            <button type="submit">Надіслати</button>
+          </form>
+        </div>
+      </div>
+
+    <!-- Друга сторінка -->
+    <section class="page2" id="page2">
+         <div class="container"> 
+            
+        <img src="./images/page2.png" alt="Друга сторінка" class="page2_img">
+        <div class="text-page2">
+        <h1 class="page_h1">Про нас</h1>
+        <h2 class="page_h2">Агентство Креативного Дизайну, що надає різні послуги</h2>
+        <p class="page_p">Ми створюємо унікальні дизайн-рішення для вашого бізнесу. Наша команда допоможе зробити ваш бренд впізнаваним, стильним і сучасним. Від розробки логотипів до повного UI/UX-дизайну — ми перетворюємо ідеї в візуальні шедеври.</p>
+        <a href="#" class="cta-button_page2">Читати більше</a></div>
+        
+    </div>
+    
+    </section>
+    <section class="page3" id="page3">
+        <div class="container">
+            <div class="text-page3">
+            <h1 class="page_h1">Наші сервіси</h1>
+                <h2 class="page_h2">Ми можемо вивести ваш бізнес на новий рівень</h2>
+                <p class="page_p">Наші рішення поєднують креативність та аналітику, щоб забезпечити стійкий розвиток вашої компанії в цифрову епоху.</p>
+                <a href="#" class="cta-button_page2">Читати більше</a>   
+            </div>
+            <div class="element-text">
+                <div class="text1">
+                    <img src="images/page3-1.PNG" alt="logo1">
+                    <h1 class="text_h1">UI/UX дизайн</h1>
+                    <p class="text_p1">Ми створюємо зручні, інтуїтивні інтерфейси, які приваблюють користувачів і підвищують ефективність вашого продукту.</p>
+                </div>
+                <div class="text2">
+                    <img src="images/page3-2.PNG" alt="logo2">
+                <h1 class="text_h1">Бренд</h1>
+                <p class="text_p2">Допомагаємо сформувати унікальний образ бренду, що запам’ятовується і викликає довіру у вашої аудиторії.</p>
+                </div>
+                <div class="text3">
+                    <img src="images/page3-3.PNG" alt="logo3">
+                <h1 class="text_h1">Ігри</h1>
+                <p class="text_p3">Розробляємо ігри з яскравим дизайном і захоплюючим сюжетом, які залишають враження надовго.</p>
+                </div>
+        <div class="text4">
+            <img src="images/page3-4.PNG" alt="logo4">
+            <h1 class="text_h1">Маркетинг</h1>
+            <p class="text_p4">Розробляємо стратегії просування, які допоможуть вашому бізнесу бути на крок попереду конкурентів.</p>
+        </div>
+    </div>
+</div>
+    </section>
+    <section class="page4" id="page4">       
+  <div class="container">
+    <div class="text_page4">
+      <h1>ВІДГУКИ</h1>
+      <h2>Що говорять люди</h2>
+      <div class="testimonial-box">
+        <p id="testimonial-text" class="fade-slide">
+          Це завдяки відмінному сервісу, конкурентоспроможним цінам і підтримці клієнтів. 
+          Відчути такий особистий контакт — це справді освіжає.
+        </p>
+        <p class="author fade-slide" id="testimonial-author">Золтан Немет</p>
+        <div class="nav-buttons">
+          <div class="nav-button left" onclick="prevTestimonial()">
+            <img src="./images/left.png" alt="Previous">
+          </div>
+          <div class="nav-button right" onclick="nextTestimonial()">
+            <img src="./images/right.png" alt="Next">
+          </div>
+        </div>
+      </div>              
+    </div>
+  </div>
+  <div id="heart">
+    <svg viewBox="0 0 32 29.6" class="heart">
+      <path d="M23.6,0c-2.6,0-5,1.2-6.6,3.2C15.4,1.2,13,0,10.4,0C4.6,0,0,4.6,0,10.4
+        c0,6.6,8.4,12,16,19.2c7.6-7.2,16-12.6,16-19.2C32,4.6,27.4,0,23.6,0z"/>
+    </svg>
+  </div>
+</section>
+
+      <section class="page5" id="page5">
+        <div class="container page5-container">
+          <div class="page5_text">
+            <h1 class="page_h1">Зв'яжіться з нами</h1>
+            <h2 class="page_h2">Не соромтесь звертатися до нас, щоб отримати будь-яку інформацію</h2>
+            <p class="page_p">
+              Ми завжди відкриті до співпраці. Заповніть форму, і ми зв'яжемося з вами у найкоротший термін. Ваші питання — наш пріоритет.
+              Надамо вичерпну консультацію, допоможемо з вибором послуги та підтримаємо на кожному етапі співпраці.
+              Не зволікайте — ми тут, щоб допомогти саме вам.
+            </p>
+          </div>
+      
+          <div class="form">
+            <form class="contact-form">
+              <label for="name">Ім’я</label>
+              <input type="text" id="name" name="name" placeholder="Ваше ім’я" required>
+      
+              <label for="email">Електронна пошта</label>
+              <input type="email" id="email" name="email" placeholder="example@email.com" required>
+      
+              <label for="message">Повідомлення</label>
+              <textarea id="message" name="message" rows="5" placeholder="Ваше повідомлення" required></textarea>
+      
+              <button type="submit" class="submit-button">Надіслати</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer id="footer" class="footer">
+        <div class="container footer-container">
+          <div class="logo2">Agency</div>
+      
+          <nav class="nav2">
+            <ul>
+              <li><a href="#page1">До дому</a></li>
+              <li><a href="#page2">Про нас</a></li>
+              <li><a href="#page3">Наш сервіс</a></li>
+              <li><a href="#page4">Служба підтримки</a></li>
+              <li><a href="#footer">Контакти</a></li>
+              <li><a href="#page5">Купити зараз</a></li>
+            </ul>
+          </nav>
+      
+          <div class="logow">
+            <img src="./images/logoy.png" alt="Instagram">
+            <img src="./images/logo1.png" alt="Facebook">
+            <img src="./images/logo2.png" alt="Twitter">
+            <img src="./images/logo3.jpg" alt="LinkedIn">
+          </div>
+        </div>
+      </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
