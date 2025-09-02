@@ -13,7 +13,7 @@ $(function(){
       header_top.removeClass("fixed");
     }
   }
-/*
+
 // const testimonials = [
 //   {
 //     text: "Це завдяки відмінному сервісу, конкурентоспроможним цінам і підтримці клієнтів. Відчути такий особистий контакт — це справді освіжає.",
@@ -108,5 +108,4 @@ $(function(){
 //     document.querySelector('.nav').classList.remove('open'); 
 //   });
 // });
-// showTestimonial(currentIndex)
-*/
+// showTestimonial(currentIndex);
