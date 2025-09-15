@@ -38,8 +38,26 @@ html, body {
 .header_top {
   background: linear-gradient(to right, #5C1AC3 0%, #B794F4 100%);
   padding: 20px 30px;
+  position: relative; /* початково у потоці */
+  width: 100%;
+  transition: box-shadow .25s ease;
 }
 
+.header_top.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background:#5C1AC3; /* фон, щоб не зливався */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+
+/* Клас, що саме показує з анімацією */
+.header_top.show {
+  transform: translateY(0);
+  opacity: 1;
+}
 .container {
   max-width: 1220px;
   width: 100%;
@@ -54,7 +72,6 @@ html, body {
   display: flex;
   gap: 5px;
 }
-
 .letter {
   font-size: 30px;
   font-weight: bold;
@@ -264,10 +281,7 @@ nav a:hover {
   padding: 100px 20px;
   color: black;
 }
-.page2.2 {
-  max-height:50%;
 
-}
 .elements_page2{
   max-height: 500px;
 }
