@@ -97,7 +97,7 @@ html, body {
   }
 }
  .page1{
-  background: linear-gradient(to right, #5C1AC3 0%, #B794F4 100%);
+  background: linear-gradient(to right, #FFF 0%, #B794F4 100%);
 }
 .burger{
   display: none;
